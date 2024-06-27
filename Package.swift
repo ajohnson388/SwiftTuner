@@ -4,7 +4,7 @@ import PackageDescription
 
 let package = Package(
     name: "SwiftTuner",
-    platforms: [.visionOS(.v1)],
+    platforms: [.visionOS(.v1), .iOS(.v13)],
     products: [
         .library(
             name: "SwiftTuner",
