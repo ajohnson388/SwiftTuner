@@ -37,8 +37,8 @@ public class TunerConductor {
     public init(isMockingInput: Bool = false, Logger: LogsEvents.Type? = nil) {
         self.Logger = Logger
         if !isMockingInput {
-            setupAudioChain()
             configureAudioSession()
+            setupAudioChain()
         } else {
             setupMockDataGenerator()
         }
